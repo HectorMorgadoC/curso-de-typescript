@@ -15,9 +15,9 @@
     }
 
     const antman: Avengers = new Avengers('antman','capitan')
-
+/*
     console.log( antman )
     console.log( Avengers.avgAge ) // los static en clases son globales
-
+*/
 
 })()

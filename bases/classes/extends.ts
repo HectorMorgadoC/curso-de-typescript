@@ -27,14 +27,26 @@ class Xmen extends Avenger {
     getFullnameXmen(): void {
         console.log(super.getFullname())
     }
+
+    // metodo setter
+    set fullName(name: string) {
+        this.realName = name
+    }
+
+    // metodo getter
+    get fullName() {
+        return this.realName
+    }
+
 }
 
 
 const wolverine = new Xmen(true,'wolverine','logan')
 
+/*
 console.log(wolverine)
 wolverine.getFullnameXmen()
-
-
-
+wolverine.fullName = 'Hector'
+console.log(wolverine.fullName)
+*/
 })()

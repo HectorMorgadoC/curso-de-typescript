@@ -107,6 +107,6 @@
   },
 //  "exclude": [ "pruebas" ],
   "include": [
-    "classes"
+    "interface"
   ]
 }

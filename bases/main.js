@@ -1,59 +1,73 @@
 "use strict";
-(() => {
-    class Avengers {
-        constructor(name, team, realName) {
-            this.name = name;
-            this.team = team;
-            this.realName = realName;
-        }
+const conducirBatimovil = (auto) => {
+    auto.encender = true;
+    auto.velocidadMaxima = 100;
+    auto.acelear();
+};
+const batimovil = {
+    encender: false,
+    velocidadMaxima: 0,
+    acelear() {
+        console.log("...... gogogo!!!");
     }
-    Avengers.avgAge = 35;
-    const antman = new Avengers('antman', 'capitan');
-    console.log(antman);
-    console.log(Avengers.avgAge);
+};
+const guason = {
+    reir: true,
+    comer: true,
+    llorar: false
+};
+const reir = (guason) => {
+    if (guason.reir) {
+        console.log("JAJAJAJA");
+    }
+};
+const ciudadGotica = (ciudadanos) => {
+    return ciudadanos.length;
+};
+class Persona {
+    imprimirBio() {
+        console.log(' est es typescript ');
+    }
+}
+(() => {
+    let flash = {
+        nombre: "Barry allen",
+        age: 24,
+        powers: ["supervelocidad", "viajar en el tiempo"],
+    };
+    console.log(flash);
+    let capitanAmerica = {
+        nombre: "steven rogers",
+        age: 120,
+        powers: ["superfuerza", "supervelocidad"],
+    };
+    console.log(capitanAmerica);
 })();
 (() => {
-    class Avenger {
-        constructor(name, realName) {
-            this.name = name;
-            this.realName = realName;
-            console.log('Contructor avenger llamado');
-        }
-        getFullname() {
-            return `${this.name} ${this.realName}`;
+    class Mutant {
+        mutanPower(id) {
+            console.log(`${id}`);
         }
     }
-    class Xmen extends Avenger {
-        constructor(siMutant, name, realName) {
-            super(name, realName);
-            this.siMutant = siMutant;
-        }
-        getFullnameXmen() {
-            console.log(super.getFullname());
-        }
-    }
-    const wolverine = new Xmen(true, 'wolverine', 'logan');
-    console.log(wolverine);
-    wolverine.getFullnameXmen();
 })();
 (() => {
-    class Avengers {
-        static avrAgebio() {
-            return 230;
-        }
-        constructor(name, team, realName) {
-            this.name = name;
-            this.team = team;
-            this.realName = realName;
-        }
-        bio() {
-            return this.name, '--', this.team;
-        }
-        biotec() {
-            console.log(this.name);
-        }
-    }
-    Avengers.avrAge = 30;
-    const antman = new Avengers('scoot lang', 'capitan');
+    const client = {
+        name: 'Fernando',
+        age: 25,
+        address: {
+            id: 3562,
+            zip: ' SFHI 56',
+            city: 'San juan de los morros'
+        },
+        getFullName(id) {
+            return `${id}`;
+        },
+    };
+});
+(() => {
+    let addNumbersFunctions;
+    addNumbersFunctions = (a, b) => {
+        return a + b;
+    };
 })();
 //# sourceMappingURL=main.js.map
