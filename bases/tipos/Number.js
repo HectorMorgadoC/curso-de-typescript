@@ -7,6 +7,6 @@ if (avengers > villans) {
 else {
     console.log('gana ejercito de tanos');
 }
-avengers = Number('23a'); /* esto devuelve un NaN
-para typescript NaN  es un numero*/
+avengers = Number('23a');
 console.log({ avengers });
+//# sourceMappingURL=Number.js.map

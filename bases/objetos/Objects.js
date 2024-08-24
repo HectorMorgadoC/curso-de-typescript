@@ -11,3 +11,4 @@ let capitanAmerica = {
     powers: ["superfuerza", "supervelocidad"],
 };
 console.log(capitanAmerica);
+//# sourceMappingURL=Objects.js.map

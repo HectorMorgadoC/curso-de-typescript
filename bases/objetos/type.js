@@ -13,3 +13,4 @@
     };
     console.log(capitanAmerica);
 })();
+//# sourceMappingURL=type.js.map

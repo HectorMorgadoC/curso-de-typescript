@@ -9,3 +9,4 @@ var AudioLevel;
 const currentAudio = AudioLevel.otroValor;
 console.log(currentAudio);
 console.log(AudioLevel);
+//# sourceMappingURL=enums.js.map

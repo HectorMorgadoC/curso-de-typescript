@@ -58,5 +58,6 @@ Aqui las constante no se infiere a un tipo de dato si no al dato en cambio la va
 
 ### Nota: en teoria y para javascript tiene 4 valores booleanos true, false, undefined, null pero typescript tienen la manera de hacer esto esplicito y restringir esto y que solo sea booleano los valores de true y false
 
+### Nota: en la configuracion del tsconfig.json el sourceMap genera un mapa para que en el navegador se pueda ver las referencias de typescript, el removeComments sirve para remover los comentarios del archivo.js transpilado, se agraga "exclude": [nombre del directorio] para excluir archivos.ts y no transpile de manera autoamatica, "include":[nombre del directorio] para que incluya archivos .ts
 
 
