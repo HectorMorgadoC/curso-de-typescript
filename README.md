@@ -60,4 +60,6 @@ Aqui las constante no se infiere a un tipo de dato si no al dato en cambio la va
 
 ### Nota: en la configuracion del tsconfig.json el sourceMap genera un mapa para que en el navegador se pueda ver las referencias de typescript, el removeComments sirve para remover los comentarios del archivo.js transpilado, se agraga "exclude": [nombre del directorio] para excluir archivos.ts y no transpile de manera autoamatica, "include":[nombre del directorio] para que incluya archivos .ts
 
+### Nota para configurar que todos los archivos ts transpilen a un archivo js se configura el tsconfig con  "outFile" = "./nombre del archivo.js" y en este archivo estara todo los acrchivos ts transpilado, para que este modulo no de error el "module" debe ser "amd" y no commonJs
 
+RECOMENDACION: usar mas constante que variables, usar variables solo si se sabe que estas van hacer mutables
