@@ -63,3 +63,18 @@ Aqui las constante no se infiere a un tipo de dato si no al dato en cambio la va
 ### Nota para configurar que todos los archivos ts transpilen a un archivo js se configura el tsconfig con  "outFile" = "./nombre del archivo.js" y en este archivo estara todo los acrchivos ts transpilado, para que este modulo no de error el "module" debe ser "amd" y no commonJs
 
 RECOMENDACION: usar mas constante que variables, usar variables solo si se sabe que estas van hacer mutables
+
+RECOMENDACION: si se tiene varios archivos distintos pero de exportacion dentro de un mismo directorio se pueden exportar desde un archivo index.ts ejemplo
+
+Archivos dentro de un directorio llamado interface:
+Hero.ts
+Villain.ts
+
+cada una tiene su metodo , funcion , interface o lo que sea de manera exportada
+index.ts
+
+```typescript
+export { Hero } from "../classes/Hero";
+export { Villain } from "./villain";
+```
+#### NOTA: PARA CONVERTIR UN JSON EN UNA INTERFACE SE USA LA PAGINA QUICKTYPE.IO O LA EXTENSION EN VSC Paste JSON as Code
